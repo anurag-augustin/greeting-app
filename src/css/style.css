@@ -1,0 +1,30 @@
+/* *{
+    margin:0; padding:0; box-sizing: border-box;background-color: rgb(172, 237, 216);
+} */
+.bod{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    background-color: rgb(154, 232, 207);
+    
+}
+
+.heading{
+    padding: 20px 20px;
+    background-color: antiquewhite;
+    color: brown;
+    border-radius: 20px;
+    
+}
+.box{
+    margin-top: -30px;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+  
+}
+.bImage img{
+    z-index: -1;
+}
