@@ -1,30 +1,245 @@
 /* *{
     margin:0; padding:0; box-sizing: border-box;background-color: rgb(172, 237, 216);
 } */
-.bod{
-    margin:0; 
-    padding:0;
-    box-sizing: border-box;
-    background-color: rgb(154, 232, 207);
-    
+
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+
+
+
+
+.bod {
+  /* margin:0; 
+    padding:0; */
+  /* box-sizing: border-box; */
+  background-color: rgb(154, 232, 207);
+  min-height: calc(100vh - 08vh - 50px);
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.heading{
-    padding: 20px 20px;
-    background-color: antiquewhite;
-    color: brown;
-    border-radius: 20px;
-    
+.heading {
+  padding: 20px 20px;
+  background-color: antiquewhite;
+  color: brown;
+  border-radius: 20px;
 }
-.box{
-    margin-top: -30px;
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    justify-content: center;
+
+.box {
+  align-items: center;
+  display: flex;
+  /* height: 300px; */
+  /* min-height: 300px; */
+  width: 100vw;
+  justify-content: center;
   
 }
-.bImage img{
-    z-index: -1;
+.bImage img {
+  z-index: -1;
 }
+.navbar {
+  
+  background-color: black;
+  color: white;
+}
+.navbar ul {
+    height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 8px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Domine', serif;
+}
+.navbar ul li{
+  list-style:none;
+  /* margin: 0; */
+  padding: 0 23px;
+}
+.prog-bar {
+  background-color: rgb(242, 32, 32);
+  height: 0px;
+  width: 0px;
+    position: absolute;
+    top: 0;
+  animation: load 0.5s ease-in-out 1;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+    height: 2px;
+  }
+  99% {
+    width: 99vw;
+
+    height: 2px;
+  }
+  100% {
+    width: 100vw;
+
+    height: 0px;
+  }
+}
+.text-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer{
+    height: 8vh;
+    background-color: black;
+    color: white;
+    font-family: 'Domine', serif;
+}
+
+
+
+
+.i {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .i-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .i-right {
+    flex: 1;
+    position: relative;
+  }
+  
+  .i-left-wrapper {
+    padding: 50px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .i-intro {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  
+  .i-name {
+    font-size: 60px;
+  }
+  
+  .i-title {
+    height: 50px;
+    overflow: hidden;
+  }
+  
+  .i-title-wrapper {
+    height: 100%;
+    animation: move 10s ease-in-out infinite normal;
+    
+  }
+  
+  @keyframes move {
+    25% {
+      transform: translateY(-50px);
+    }
+    50% {
+      transform: translateY(-100px);
+    }
+    75% {
+      transform: translateY(-150px);
+    }
+    100% {
+      transform: translateY(-200px);
+    }
+  }
+  
+  .i-title-item {
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #59b256;
+    display: flex;
+    align-items: center;
+  }
+  
+  .i-scroll {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+  }
+  
+  .i-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+  
+  .i-bg {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    background-color: #0ecc79;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .i {
+      flex-direction: column;
+    }
+  
+    .i-left-wrapper {
+    
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+    }
+  
+    .i-desc{
+      display: none;
+    }
+    
+  }
+  
+  .wrapper1 {
+    /* height: 100vh; */
+   
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    /* width: 10ch; */
+    animation: typing 2s steps(22) , blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+    
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
