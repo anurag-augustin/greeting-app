@@ -195,6 +195,15 @@ footer{
   }
   
   @media screen and (max-width: 480px) {
+
+    .i-intro {
+        font-size: 20px;
+        font-weight: 300;
+      }
+      
+      .i-name {
+        font-size: 50px;
+      }
     .i {
       flex-direction: column;
     }
